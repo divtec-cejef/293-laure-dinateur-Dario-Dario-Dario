@@ -157,8 +157,21 @@ main{
 footer{
     padding: 50px;
     text-align: center;
+    display: inline-block;
 
 }
+footer img{
+    text-align: center;
+    filter: grayscale(1);
+    max-width: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer img:hover{
+    filter: grayscale(0);
+    transition: filter 500ms linear;
+}
+
 
 /***********************************************
 
