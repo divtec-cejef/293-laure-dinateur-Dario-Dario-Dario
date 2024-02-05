@@ -72,16 +72,19 @@ header{
     line-height: 0.8;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color:#2ec4b6;
 }
 
 .logo-metier{
     margin-top: -5px;
 }
 
+
 nav{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
+    color: white;
 
 }
 
@@ -103,6 +106,7 @@ nav li{
 nav a{
     font-weight: 800;
     padding: 15px 10px 15px 10px;
+    color:white;
 }
 
 nav a:hover{
@@ -123,6 +127,7 @@ h5,
 h6{
     font-family: "Changa One", sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 h1{
@@ -154,14 +159,26 @@ main{
     padding: 0 5% 0 5%;
 }
 
+.logo-main-div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-main{
+    border-radius: 50%;
+    max-width: 50%;
+
+}
+
 footer{
     padding: 50px;
     text-align: center;
-    display: inline-block;
+    display: inline;
 
 }
 footer img{
-    text-align: center;
+
     filter: grayscale(1);
     max-width: 50px;
     margin-right: auto;
@@ -198,7 +215,3 @@ footer img:hover{
                    page info
 
  ************************************************/
-
-.page-info h1{
-    color: aqua;
-}
