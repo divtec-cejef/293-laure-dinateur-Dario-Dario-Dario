@@ -57,10 +57,11 @@ body {
     line-height: 1.4;
     color: #011627;
     background-color: #fdfffc;
+    margin: 0;
 }
 
 header{
-    background-color: black;
+    background-color: #011627;
     text-align: center;
     margin-top: 5px;
     padding-bottom: 30px;
@@ -88,7 +89,7 @@ nav{
 
 }
 
-.page-accueil{
+.page-accueil-lien{
     display: none;
 }
 
@@ -184,6 +185,7 @@ footer img{
     max-width: 50px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 footer img:hover{
     filter: grayscale(0);
@@ -197,7 +199,7 @@ footer img:hover{
 
  ************************************************/
 
-.page-accueil h1 {
+.page-accueil-lien h1 {
     color: yellow;
 }
 
