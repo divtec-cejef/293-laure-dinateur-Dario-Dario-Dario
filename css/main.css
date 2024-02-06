@@ -210,9 +210,27 @@ footer img:hover{
 
  ************************************************/
 
-.page-contact h1 {
-    color: red;
+.titre-contact{
+    text-align: left;
 }
+.box-contact{
+    display: inline-block;
+}
+.puce-tel {
+    list-style-image: url("img/phone.png");
+}
+.puce-mail {
+    list-style-image: url("img/mail.png");
+}
+.puce-twitter {
+    list-style-image: url("img/twitter.png");
+}
+.puce-facebook{
+    list-style-image: url("img/facebook.png");
+}
+
+
+
 
 /***********************************************
 
