@@ -160,6 +160,7 @@ main{
 }
 
 .logo-main-div{
+    margin: 2rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +168,7 @@ main{
 
 .logo-main{
     border-radius: 50%;
-    max-width: 50%;
+    max-width: 40%;
 
 }
 
