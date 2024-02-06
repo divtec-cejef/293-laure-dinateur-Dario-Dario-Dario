@@ -108,9 +108,10 @@ nav a{
     font-weight: 800;
     padding: 15px 10px 15px 10px;
     color:white;
-}
+    font-family: "Changa One", sans-serif;}
 
-nav a:hover{
+nav a:hover,
+nav a.actif{
     color:#2ec4b6;
 }
 
@@ -185,7 +186,7 @@ footer img{
     max-width: 50px;
     margin-right: auto;
     margin-left: auto;
-    
+
 }
 footer img:hover{
     filter: grayscale(0);
