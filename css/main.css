@@ -1,9 +1,6 @@
-/***********************************************
-
-            police (fonts)
-
- ************************************************/
-
+/*************************************
+                FONTS
+ ************************************/
 /* open-sans-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -30,6 +27,7 @@
     font-weight: 800;
     src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* changa-one-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -39,19 +37,15 @@
     src: url('../fonts/changa-one-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/***********************************************
-
-            règle générale
-
- ************************************************/
-
-
+/*************************************
+            Règles Générales
+ ************************************/
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 100%;
     line-height: 1.4;
@@ -60,65 +54,14 @@ body {
     margin: 0;
 }
 
-header{
-    background-color: #011627;
-    text-align: center;
-    margin-top: 5px;
-    padding-bottom: 30px;
-}
-
-.logo-nom{
-    font-family: "Changa One", sans-serif;
-    font-size: 1.75rem;
-    line-height: 0.8;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color:#2ec4b6;
-}
-
-.logo-metier{
-    margin-top: -5px;
-}
-
-
-nav{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    color: white;
-
-}
-
-.page-accueil-lien{
-    display: none;
-}
-
-nav ul{
-    padding: 0;
-    margin: 0 10px 0 10px;
-}
-
-nav li{
-    display: inline-block;
-    padding: 0;
-
-}
-
-nav a{
-    font-weight: 800;
-    padding: 15px 10px 15px 10px;
-    color:white;
-    font-family: "Changa One", sans-serif;}
-
-nav a:hover,
-nav a.actif{
-    color:#2ec4b6;
-}
-
 img {
     max-width: 100%;
     height: auto;
     width: auto;
+}
+
+main {
+    margin: 20px 2.5%;
 }
 
 h1,
@@ -126,114 +69,253 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    font-family: "Changa One", sans-serif;
+h6 {
+    font-family: 'Changa One', sans-serif;
     font-weight: 400;
-    text-align: center;
 }
 
-h1{
-     font-size: 2rem;
-     margin-bottom: 1em;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
     margin-bottom: .75em;
 }
 
-p{
+p {
     line-height: 1.5;
 }
 
 a {
     color: #e71d36;
     text-decoration: none;
-
 }
 
 a:hover {
-    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-
+    /*border-bottom: 2px solid #e71d36;*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 }
 
-main{
-    padding: 0 5% 0 5%;
-}
-
-.logo-main-div{
-    margin: 2rem;
+/*************************************
+            ENTÊTE DU SITE
+ ************************************/
+header {
+    background-color: #011627;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 5px 30px;
 }
 
-.logo-main{
-    border-radius: 50%;
-    max-width: 40%;
-
+header ul {
+    padding: 0;
 }
 
-footer{
-    padding: 50px;
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.accueil {
+    display: none;
+}
+
+header ul li a {
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    color: #fdfffc;
+}
+
+header ul li a:hover,
+header ul li a.actif {
+    color: #2ec4b6;
+}
+
+header .personne {
+    font-size: 1.75rem;
+    line-height: 0.8;
+    color: #2ec4b6;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+header .metier {
+    margin-top: -5px;
+}
+
+/*************************************
+            FOOTER
+ ************************************/
+
+footer {
     text-align: center;
-    display: inline;
-
+    padding: 50px 0 0; /* 50px en haut */
 }
-footer img{
 
+footer nav {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li img {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+
+    -webkit-filter: grayscale(1);
     filter: grayscale(1);
-    max-width: 50px;
-    margin-right: auto;
-    margin-left: auto;
 
-}
-footer img:hover{
-    filter: grayscale(0);
+    -webkit-transition: -webkit-filter 500ms linear;
     transition: filter 500ms linear;
 }
 
+footer ul li img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
 
-/***********************************************
-
-                 page accueil
-
- ************************************************/
-
-.page-accueil-lien h1 {
+/*************************************
+            PAGE ACCUEIL
+ ************************************/
+.page-accueil h1 {
     color: yellow;
 }
 
-/***********************************************
-
-                   page contact
-
- ************************************************/
-
-.titre-contact{
-    text-align: left;
-}
-.box-contact{
-    display: inline-block;
-}
-.puce-tel {
-    list-style-image: url("img/phone.png");
-}
-.puce-mail {
-    list-style-image: url("img/mail.png");
-}
-.puce-twitter {
-    list-style-image: url("img/twitter.png");
-}
-.puce-facebook{
-    list-style-image: url("img/facebook.png");
+.liste-tableau {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.liste-tableau li {
+    flex: 0 1 50%;
+    padding: 1rem 2.5%;
+}
+
+.liste-tableau li figure {
+    margin: 0;
+    color: #011627;
+    background-color: #e7e9eb;
+    transition: all 0.2s ease;
+}
+
+.liste-tableau li figure:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.liste-tableau li figure figcaption{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.page-accueil h1 {
+    text-align: center;
+}
 
 
 
-/***********************************************
+/*************************************
+            PAGE CONTACT
+ ************************************/
+.page-contact h1 {
+    color: red;
+}
 
-                   page info
+/*************************************
+            PAGE INFO
+ ************************************/
+.page-infos h1 {
+    color: aqua;
+}
 
- ************************************************/
+.logo-main {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*************************************
+            media queries
+ ************************************/
+
+/* pour les ecran de minimum 480 px de large */
+@media screen and (min-width: 480px) {
+    .liste-tableau li {
+        flex: 0 1 33%;
+    }
+
+    .logo-main {
+        float: left;
+        margin-bottom: 200px ;
+    }
+
+    .page-contact .container  {
+        display: flex;
+    }
+
+    .page-contact .box-contact-1{
+        width: 50%;
+    }
+
+    .page-contact .box-contact-2{
+        width: 40%;
+        margin-left: 10%;
+    }
+
+}
+
+@media screen and (min-width: 660px) {
+    header {
+        border-bottom: solid 5px #2ec4b6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        width: 42%;
+        text-align: left;
+    }
+
+    header .logo .personne {
+        font-size: 2.3rem;
+    }
+
+    header .logo .metier {
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        width: 48%;
+        font-size: 1.125rem;
+
+    }
+}
+
+@media screen and (min-width: 910px) {
+    .accueil {
+        display: inline-block;
+    }
+
+    main,
+    footer {
+        max-width: calc(910px - 5%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
